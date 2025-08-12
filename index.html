@@ -1,3 +1,4 @@
+Bratish, [12.08.2025 15:07]
 <!DOCTYPE html>
 <html lang="uz">
 <head>
@@ -114,7 +115,8 @@
             animation: slideInLeft 1s ease-out 0.3s both;
         }
 
-        @keyframes slideInLeft {
+Bratish, [12.08.2025 15:07]
+@keyframes slideInLeft {
             from { opacity: 0; transform: translateX(-50px); }
             to { opacity: 1; transform: translateX(0); }
         }
@@ -188,6 +190,7 @@
             gap: 25px;
             margin-top: 40px;
             animation: fadeInUp 1s ease-out 1.5s both;
+            flex-wrap: wrap;
         }
 
         .social-btn {
@@ -252,9 +255,20 @@
             border-color: rgba(225, 48, 108, 0.4);
         }
 
-        .instagram:hover {
+Bratish, [12.08.2025 15:07]
+.instagram:hover {
             background: linear-gradient(135deg, #e1306c, #fd1d1d, #fcb045);
             box-shadow: 0 20px 40px rgba(225, 48, 108, 0.4);
+        }
+
+        .github {
+            background: linear-gradient(135deg, rgba(51, 51, 51, 0.8), rgba(88, 88, 88, 0.8));
+            border-color: rgba(51, 51, 51, 0.4);
+        }
+
+        .github:hover {
+            background: linear-gradient(135deg, #333, #586069);
+            box-shadow: 0 20px 40px rgba(51, 51, 51, 0.4);
         }
 
         .email {
@@ -277,6 +291,7 @@
         .social-btn:nth-child(1) { animation-delay: 1.6s; }
         .social-btn:nth-child(2) { animation-delay: 1.8s; }
         .social-btn:nth-child(3) { animation-delay: 2s; }
+        .social-btn:nth-child(4) { animation-delay: 2.2s; }
 
         /* Magic sparkle effect */
         .social-btn::after {
@@ -376,7 +391,8 @@
             transform: translateY(-10px);
         }
 
-        .skill-icon {
+Bratish, [12.08.2025 15:07]
+.skill-icon {
             font-size: 3rem;
             margin-bottom: 20px;
             background: linear-gradient(45deg, #667eea, #764ba2);
@@ -391,13 +407,12 @@
             .hero h2 { font-size: 1.2rem; }
             .tech-stack { flex-wrap: wrap; }
             .social-buttons { 
-                flex-direction: column; 
-                align-items: center; 
-                gap: 20px;
+                gap: 15px;
             }
             .social-btn {
-                padding: 16px 30px;
+                padding: 16px 25px;
                 font-size: 0.95rem;
+                min-width: 140px;
             }
             .tech-icon { width: 50px; height: 50px; font-size: 20px; }
         }
@@ -405,9 +420,16 @@
         @media (max-width: 480px) {
             .hero h1 { font-size: 2rem; }
             .profile-img { width: 120px; height: 120px; font-size: 50px; }
+            .social-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
             .social-btn {
                 padding: 14px 25px;
                 font-size: 0.9rem;
+                width: 200px;
+                justify-content: center;
             }
         }
     </style>
@@ -453,6 +475,10 @@
                     <i class="fab fa-instagram"></i>
                     <span>Instagram</span>
                 </a>
+                <a href="https://github.com/Baydjayev" class="social-btn github" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
                 <a href="mailto:itpark310@gmail.com" class="social-btn email">
                     <i class="fas fa-envelope"></i>
                     <span>Email</span>
@@ -465,7 +491,8 @@
         </div>
     </div>
 
-    <section class="about" id="about">
+Bratish, [12.08.2025 15:07]
+<section class="about" id="about">
         <div class="container">
             <h2 class="section-title">🚀 Professional Skills</h2>
             <p style="font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto 50px; line-height: 1.8;">
@@ -527,12 +554,17 @@
                 const speed = (index + 1) * 0.5;
                 const x = mouseX * speed * 10;
                 const y = mouseY * speed * 10;
-                particle.style.transform += ` translate(${x}px, ${y}px)`;
+                particle.style.transform +=  translate(${x}px, ${y}px);
             });
         });
     </script>
 </body>
 </html>
+
+
+
+
+
 
 
 
